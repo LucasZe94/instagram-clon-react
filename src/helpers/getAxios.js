@@ -1,9 +1,9 @@
 
 
 
-export const getAxios = async () =>{
+export const getAxios = async (page = 0) =>{
     try{
-        const url = `https://reqres.in/api/users`;
+        const url = `../data/data.json`;
         const response = await fetch(url);
         const json = await response.json();
         const data = json   

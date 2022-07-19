@@ -5,7 +5,7 @@ import { Navbar } from "./Navbar"
 const { data } = await getAxios()
 const dataUser = data.data
 
-console.log(dataUser);
+console.log(data);
 
 export const Header = () => {
 
@@ -16,8 +16,8 @@ export const Header = () => {
       <Navbar />
       <div className="history">
         {
-          dataUser.map((item, { id, first_name, avatar }) => (
-            <Histories key={id} {...item} />
+          dataUser.map((item) => (
+            <Histories {...item} />
           ))
         }
       </div>

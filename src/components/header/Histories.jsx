@@ -1,12 +1,14 @@
 
-export const Histories = ({id, first_name, avatar }) => {    
+export const Histories = ({ first_name, avatar }) => {    
 
 
 
   return (
         <div className="histories">
           
-           {/* <img src={avatar} alt={first_name} /> */}
+           <div className="border_history">
+           <img src={avatar} alt={first_name} />
+           </div>
            <h4>{first_name}</h4>
         </div>
   )
