@@ -1,27 +1,26 @@
-import { useState } from "react";
 import { getAxios } from "../../helpers/getAxios";
-import { Histories } from "./Histories"
-import { Navbar } from "./Navbar"
+import { Histories } from "./Histories";
+import { Navbar } from "./Navbar";
 
-const { data } = await getAxios()
+const { data } = await getAxios();
 const dataUser = data.data;
 
 export const Header = () => {
-  const storyCircle = document.querySelector('.story-content');
-  const storyContent = document.querySelector('.story');
-  const btnScrollRight = document.querySelector('#btn-scroll-right');
-  const btnScrollLeft = document.querySelector('#btn-scroll-left');
 
-  
-  const hadleScrollButton = (val) =>{
+  const hadleScrollButton = (val) => {
+    const storyCircle = document.querySelector('.story-content');
+    const storyContent = document.querySelector('.story');
+    const btnScrollRight = document.querySelector('#btn-scroll-right');
+    const btnScrollLeft = document.querySelector('#btn-scroll-left');
+
     let scrollPosition = 0;
-    let scrollAmount = 500;
+    let scrollAmount = 300;
 
     const maxScroll = -storyContent.clientWidth - storyCircle.clientWidth;
 
-    scrollPosition += (val * scrollAmount);
+    scrollPosition = (val * scrollAmount);
     
-    if(scrollPosition >= 0 ){
+    if(scrollPosition >= 0){
       scrollPosition = 0
       btnScrollLeft.style.opacity = "0"
     }else{
@@ -35,8 +34,8 @@ export const Header = () => {
       btnScrollRight.style.opacity = "1"
     }
 
+  
     storyCircle.style.left = `${scrollPosition}px`
-
   }
 
   return (

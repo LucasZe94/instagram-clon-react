@@ -14,7 +14,7 @@ html{
 .header{
     width: 100%;
     min-width: 250px;
-    height: 10rem;
+    /* height: 10rem; */
 }
 
 .navbar{
@@ -72,7 +72,7 @@ html{
 
 /***************** History */
 .story{
-    width: calc(70%);
+    width: 58%;
     height: 80%;
     margin: 0 auto;
     margin-top: 20px;
@@ -107,7 +107,7 @@ html{
     display: flex;
 }
 .btn-left{
-  right: 16% ;
+  right: 21.5% ;
 }
 
 
@@ -120,7 +120,6 @@ html{
     align-items: center;
 }
 .story-content{
-    width: 100%;
     display: flex;
     gap: 10px;
     position: relative;
