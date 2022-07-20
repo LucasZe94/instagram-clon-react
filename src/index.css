@@ -10,11 +10,13 @@ html{
 }
 
 /**************** Header */
+
 .header{
     width: 100%;
     min-width: 250px;
     height: 10rem;
 }
+
 .navbar{
     width: 100%;
     height: 4rem;
@@ -24,8 +26,11 @@ html{
     align-items: center;
     padding: .7rem;
 }
+.logo{
+    flex-basis: 20%;
+}
 .search{
-    flex-basis: 40%;
+    flex-basis: calc(30%);
     display: flex;
     justify-content: center;
 }
@@ -46,7 +51,7 @@ html{
 .buttonsIcons{
     display: flex;
     justify-content: space-evenly ;
-    flex-basis: 40%;
+    flex-basis: calc(40%);
 }
 .buttonsIcons span{
     font-size: 1.8rem;
@@ -66,42 +71,82 @@ html{
 }
 
 /***************** History */
-.history{
-    width: 70%;
-    height: 85%;
+.story{
+    width: calc(70%);
+    height: 80%;
     margin: 0 auto;
     margin-top: 20px;
-    padding: 10px;
+    padding: 5px;
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     overflow: hidden;
     border: 1px solid rgba(128, 128, 128, 0.583);
     border-radius: 8px;
+    position: relative;
+    /* overflow-x: auto; */
+    transition: all 100ms;
+
 }
-.histories {
-    height: 7rem;
+/* .story::-webkit-scrollbar{
+    visibility: hidden;
+} */
+
+.btn-scroll{
+    background-color: #fff;
+    box-shadow: 0 0 10px #fff;
+    color: #999;
+    padding: 5px 5px;
+    border: 0;
+    border-radius: 50%;
+    margin: 0 5px;
+    z-index: 1;
+    cursor: pointer;
+    position: fixed;
+    display: flex;
+}
+.btn-left{
+  right: 16% ;
+}
+
+
+
+.story-container {
+    /* padding: 5px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
-.border_history{   
-    border: 2px solid red;
-    border-radius: 50%;
+.story-content{
+    width: 100%;
     display: flex;
-    padding: 2px;
+    gap: 10px;
+    position: relative;
+    left: 0px;
+    transition: all 300ms;
+    flex-wrap: nowrap;
 }
-.histories img{
-    width: max-content;
+
+.story-circle{
+    width: 5rem;
     height: 5rem;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
+    background: linear-gradient(45deg, rgb(231, 0, 231), rgb(255, 115,0));
+
 }
-.historyUser{
-    padding-left: 1rem;
+
+.story-circle img{
+    width: 95%;
+    height: 95%;
+    border-radius: 50%;
+    border: 2px solid rgb(255, 255, 255);
 }
-.historyUser img{
-    width: max-content;
+.story-name{
+    font-size: 1rem;
 }
