@@ -6,7 +6,7 @@ export const ButtonsNavbar = () => {
         <div className="logo_message">
             <img src="../../../public/messenger.svg" width='25px' alt="logo_messager" />
         </div>
-        <span className="material-symbols-outlined"> add_box</span> 
+        <span className="material-symbols-outlined">add_box</span> 
         <span className="material-symbols-outlined">explore</span>
         <span className="material-symbols-outlined">favorite</span>
         <div className="user">

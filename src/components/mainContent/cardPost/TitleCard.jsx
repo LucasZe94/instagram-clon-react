@@ -7,7 +7,7 @@ export const TitleCard = () => {
                 <span>adad</span>
               <span>sad</span></div>
               <div className="title_icon">
-                <span class="material-symbols-outlined">more_horiz</span>
+                <span className="material-symbols-outlined">more_horiz</span>
               </div>
      </div>
   )

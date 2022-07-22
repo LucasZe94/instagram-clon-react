@@ -1,4 +1,5 @@
 import { getAxios } from "../../helpers/getAxios"
+import { Description } from "./cardPost/Description";
 import { ImagePost } from "./cardPost/ImagePost";
 import { TitleCard } from "./cardPost/TitleCard";
 
@@ -10,6 +11,7 @@ export const Post = () => {
     <div className="post">
       <TitleCard />
       <ImagePost />
+      <Description/>
     </div>
 
   )

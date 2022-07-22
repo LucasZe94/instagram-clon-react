@@ -5,10 +5,10 @@ export const ImagePost = () => {
         
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img src="../../public/opa.jpg" class="d-block w-100" alt="..."/>
+              <img src="../../public/opa.jpg" className="d-block w-100" alt="..."/>
             </div>
             <div className="carousel-item">
-              <img src="../../public/opa.jpg" class="d-block w-100" alt="..."/>
+              <img src="../../public/opa.jpg" className="d-block w-100" alt="..."/>
             </div>
             <div className="carousel-item">
               <img src="../../public/opa.jpg" className="d-block w-100" alt="..."/>
